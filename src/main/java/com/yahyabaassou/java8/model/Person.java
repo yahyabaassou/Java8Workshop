@@ -1,4 +1,4 @@
-package com.yahyabaassou.model;
+package com.yahyabaassou.java8.model;
 
 import java.util.Calendar;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.yahyabaassou.exercises;
+package com.yahyabaassou.java8.exercises;
 
 public class ExerciseNotCompletedException extends RuntimeException {
 

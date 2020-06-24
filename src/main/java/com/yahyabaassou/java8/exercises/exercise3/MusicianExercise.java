@@ -1,7 +1,7 @@
-package com.yahyabaassou.exercises.exercise3;
+package com.yahyabaassou.java8.exercises.exercise3;
 
-import com.yahyabaassou.exercises.Exercise;
-import com.yahyabaassou.model.Person;
+import com.yahyabaassou.java8.exercises.Exercise;
+import com.yahyabaassou.java8.model.Person;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,11 +1,11 @@
-package com.yahyabaassou.answers.exercise1;
+package com.yahyabaassou.java8.exercises.exercise1;
 
-import com.yahyabaassou.model.Car;
+import com.yahyabaassou.java8.exercises.Exercise;
+import com.yahyabaassou.java8.model.Car;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class PredicateExercise {
 
@@ -25,12 +25,7 @@ public class PredicateExercise {
 
     //Use stream to return only brands where the brand name length is > 3 and <= 5 and country is japan or france
     public List<String> getMatchingBrands() {
-        List<String> countries = Arrays.asList("France", "Japan");
-        return CARS.stream()
-                .filter(i -> countries.contains(i.getCountry()))
-                .filter(i -> i.getBrand().length() > 3 && i.getBrand().length() <= 5)
-                .map(Car::getBrand)
-                .collect(Collectors.toList());
+        return Exercise.replaceThisWithSolution();
     }
 
 

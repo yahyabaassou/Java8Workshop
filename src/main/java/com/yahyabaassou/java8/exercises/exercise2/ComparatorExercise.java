@@ -1,13 +1,11 @@
-package com.yahyabaassou.answers.exercise2;
+package com.yahyabaassou.java8.exercises.exercise2;
 
-import com.yahyabaassou.exercises.Exercise;
-import com.yahyabaassou.model.Car;
+import com.yahyabaassou.java8.exercises.Exercise;
+import com.yahyabaassou.java8.model.Car;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ComparatorExercise {
 
@@ -24,24 +22,14 @@ public class ComparatorExercise {
             new Car("Citroen", "C4", 190, "France")
     ));
 
-
     //Use stream to return the fastest model from the CARS list
     public String getFastestCarModel() {
-        return CARS.stream()
-            .sorted(Comparator.comparingDouble(Car::getMaxSpeed).reversed())
-            .map(Car::getModel)
-            .limit(1)
-            .findFirst()
-            .orElse(null);
+        return Exercise.replaceThisWithSolution();
     }
 
-    //Use stream to return the fastest model from the CARS list
+    //Use stream to return the 3 fastest countries from the CARS list ordered by position
     public List<String> getThe3FastestCountries() {
-        return CARS.stream()
-                .sorted(Comparator.comparingDouble(Car::getMaxSpeed).reversed())
-                .map(Car::getCountry)
-                .limit(3)
-                .collect(Collectors.toList());
+        return Exercise.replaceThisWithSolution();
     }
 
 

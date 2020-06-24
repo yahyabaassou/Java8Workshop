@@ -1,4 +1,4 @@
-package com.yahyabaassou.exercises.exercise3;
+package com.yahyabaassou.java8.exercises.exercise3;
 
 import org.junit.Before;
 import org.junit.Test;
