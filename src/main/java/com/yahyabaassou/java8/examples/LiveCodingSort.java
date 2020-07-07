@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
-public class LiveCoding {
-
+public class LiveCodingSort {
 
     private static final List<Country> COUNTRIES = Arrays.asList(
             new Country("Singapore", "Singapore", 5.639),
@@ -46,10 +46,13 @@ public class LiveCoding {
         );
     }
 
-
     public static List<String> sortWithJava8() {
-        //TODO: to be completed
-        return Collections.emptyList();
+        return COUNTRIES.stream()
+                .sorted(Comparator.comparingDouble(Country::getPopulation).reversed())
+                .limit(3)
+                .peek(country -> System.out.println(country.population))
+                .map(country -> country.getName().concat(":").concat(country.getCapital()))
+                .collect(Collectors.toList());
     }
 
     private static class Country {
